@@ -1951,7 +1951,7 @@ button {
     } */
 
     /* video section ------------- */
-    
+
     .video-section {
         margin-top: 6.75rem;
         background: linear-gradient(90deg, #305d52 1.26%, #153f38 100%);
@@ -2036,7 +2036,7 @@ button {
         bottom: 45px;
     }
 
-    .modal-content .video-container{
+    .modal-content .video-container {
         max-height: 80vh;
     }
 }
@@ -2077,6 +2077,10 @@ button {
         max-width: 100%;
     }
 
+    .video-section .left-content {
+        padding-left: 12.5rem;
+    }
+
     p {
         line-height: 35px !important;
     }
@@ -2086,6 +2090,14 @@ button {
 @media only screen and (min-width: 160rem) {
     html {
         font-size: 150%;
+    }
+
+     p {
+        line-height: 40px !important;
+    }
+
+    .video-section .left-content {
+        padding-left: 14.75rem;
     }
 }
 
