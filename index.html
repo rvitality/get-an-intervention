@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+            name="description"
+            content="Respect older adults by valuing their skills, fostering intergenerational connections, and supporting their independence."
+        />
+        <meta name="keywords" content="elderly care, respect seniors, aging, intergenerational support, independence" />
+        <meta name="author" content="Get an Intervention Team" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Get an Intervention" />
+        <meta
+            property="og:description"
+            content="Respect older adults by valuing their skills, fostering intergenerational connections, and supporting their independence."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="..." />
+        <meta property="og:image" content="...g" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="..." />
+        <meta name="twitter:title" content="Get an Intervention" />
+        <meta
+            name="twitter:description"
+            content="Respect older adults by valuing their skills, fostering intergenerational connections, and supporting their independence."
+        />
+        <meta name="twitter:image" content="...g" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <!-- We'll self-host the fonts for now. Please read the README.md in the fonts folder. -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        /> -->
+
+        <link rel="stylesheet" href="./styles/index.css" />
+        <title>Get an Intervention</title>
+    </head>
+    <body>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <!-- Primary Header -->
+                    <header class="primary-header">
+                        <a href="/index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="Get an Intervention Logo" />
+                        </a>
+
+                        <div class="primary-nav-container">
+                            <nav class="nav-menu">
+                                <ul>
+                                    <li>
+                                        <a href="/index.html" class="active-link">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/index.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="/index.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="separator"></div>
+
+                            <div class="consult-action">
+                                <span>Call now for a consult</span>
+                                <a href="tel:+123.456.7890" class="phone-no">123.456.7890</a>
+                            </div>
+                        </div>
+
+                        <!-- Hamburger Button -->
+                        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </header>
+
+                    <!-- Hero Section -->
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-primary-text">
+                                <span class="text-outlined">Get an</span><br />
+                                <span>Intervention</span>
+                            </h1>
+                            <p class="hero-desc text-paragraph">
+                                Showing greater respect to older adults can be done in several ways : acknowledging and
+                                putting to use the talents and skills of older adults; creating intergenerational
+                                initiatives; and allowing older adults to stay active and independent for as long as
+                                possible.
+                            </p>
+                        </div>
+
+                        <form id="contact-form" class="hero-form">
+                            <h2 class="heading-secondary">Contact Us</h2>
+
+                            <div class="input-fields">
+                                <div class="form-group">
+                                    <input id="first-name" type="text" name="first-name" placeholder=" " autocomplete="on" />
+                                    <label for="first-name">First Name</label>
+                                    <span class="tooltip error-danger">This field can't be empty. Please fill it in.</span>
+                                </div>
+                                <div class="form-group">
+                                    <input id="last-name" type="text" name="last-name" placeholder=" " />
+                                    <label for="last-name">Last Name</label>
+                                    <span class="tooltip error-danger">This field can't be empty. Please fill it in.</span>
+                                </div>
+                                <div class="form-group">
+                                    <input id="business-email" type="text" name="business-email" placeholder=" " />
+                                    <label for="business-email">Business Email</label>
+                                    <span class="tooltip error-danger">This field can't be empty. Please fill it in.</span>
+                                </div>
+                                <div class="form-group">
+                                    <input id="company" type="text" name="company" placeholder=" " />
+                                    <label for="company">Company</label>
+                                    <span class="tooltip error-danger">This field can't be empty. Please fill it in.</span>
+                                </div>
+                                <div class="form-group select-wrapper">
+                                    <select name="country" id="country">
+                                        <option value="" disabled hidden>Select a country</option>
+                                        <option value="ph">Philippines</option>
+                                        <option value="us">United States</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="au">Australia</option>
+                                        <option value="jp">Japan</option>
+                                        <option value="de">Germany</option>
+                                        <option value="fr">France</option>
+                                        <option value="br">Brazil</option>
+                                        <option value="in">India</option>
+                                    </select>
+                                    <label for="country">Country</label>
+                                    <span class="caret"></span>
+                                    <span class="tooltip error-danger">This field can't be empty. Please fill it in.</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-submit-container">
+                                <button type="submit" class="primary-cta-btn">
+                                    <img src="assets/icons/send-icon.svg" alt="Send" />
+                                    <span class="submit-text">Submit</span>
+                                </button>
+                                <span class="spinner"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <svg
+                    preserveAspectRatio="none"
+                    class="lg-hero-wavy-bg"
+                    width="1440"
+                    height="112"
+                    viewBox="0 0 1440 110"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M0 68.6766C310 -147.298 926 229.879 1440 68.6766V111H0V68.6766Z"
+                        fill="#F5F5F5"
+                        fill-opacity="1"
+                    />
+                    <path
+                        d="M0 68.6766C310 -147.298 926 229.879 1440 68.6766V111H0V68.6766Z"
+                        fill="#F5F5F5"
+                        fill-opacity="0.3"
+                    />
+                    <path d="M0 77.1705C310 -96.3296 926 206.67 1440 76.1705V111.17H0V77.1705Z" fill="#F5F5F5" />
+                </svg>
+
+                <svg
+                    class="xl-hero-wavy-bg"
+                    preserveAspectRatio="none"
+                    width="100%"
+                    height="130"
+                    viewBox="0 0 1440 130"
+                    transform="translate(0, 20)"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    path d="M0 68.6766C310 -147.298 926 229.879 1440 68.6766V111H0V68.6766Z" fill="#F5F5F5"
+                    fill-opacity="0.3" />
+                    <path
+                        d="M0 68.6766C310 -147.298 926 229.879 1440 68.6766V111H0V68.6766Z"
+                        fill="#F5F5F5"
+                        fill-opacity="0.3"
+                    />
+                    <path d="M0 77.1705C310 -96.3296 926 206.67 1440 77.1705V111.17H0V77.1705Z" fill="#F5F5F5" />
+                </svg>
+            </section>
+
+            <!-- About Section -->
+            <section class="about">
+                <div class="container">
+                    <div class="about-images-container">
+                        <div class="about-image-card">
+                            <img src="assets/images/about/about-1.jpg" alt="Old couple holding hands" />
+                        </div>
+                        <div class="about-image-card">
+                            <img src="assets/images/about/about-2.jpg" alt="Old couple smiling together" />
+                        </div>
+                        <div class="about-image-card">
+                            <img src="assets/images/about/about-3.jpg" alt="Group of old people" />
+                        </div>
+                    </div>
+
+                    <div class="section-heading">
+                        <h3 class="heading-tertiary text-with-line">
+                            <span class="text-outlined dark">We</span>
+                            <span>Understand</span>
+                        </h3>
+                    </div>
+
+                    <div class="about-info-container">
+                        <p class="about-info">
+                            Older adults want to play active and meaningful roles in their lives, including as part of a
+                            social network, a neighborhood, and a community. Service providers and policymakers must consider
+                            that a lack of sense of purpose can become problematic as people age. Engaging them in leisure
+                            activities and volunteer work is important.
+                        </p>
+                        <p class="about-info">
+                            Older adults want to play active and meaningful roles in their lives, including as part of a
+                            social network, a neighborhood, and a community. Service providers and policymakers must consider
+                            that a lack of sense of purpose can become problematic as people age. Engaging them in leisure
+                            activities and volunteer work is important.
+                        </p>
+                        <div class="cta-container">
+                            <p class="about-info">
+                                To stimulate social contacts, neighborhood initiatives can be developed. Social meeting
+                                places, such as pubs and churches can help to foster the development of close and peripheral
+                                relationships.
+                            </p>
+                            <button type="button" class="secondary-cta-btn">
+                                92% Success Rate
+                                <img src="assets/icons/arrow-right-icon.svg" alt="Arrow Right Icon" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <!-- List of testimonials -->
+                <div class="container">
+                    <div class="inner-container">
+                        <div class="slider-container">
+                            <div class="slider-track" id="slider-track">
+                                <!-- Clone of last -->
+                                <div class="slide">
+                                    <div class="profile-img-container">
+                                        <img class="profile-img" src="assets/images/testimonials/person-3.jpg" alt="" />
+                                    </div>
+                                    <div class="content-container">
+                                        <p class="profile-name">Jane Doe</p>
+                                        <p class="testimonial">
+                                            I have been caring for my mom & dad off and on for about 10 years now, and I know
+                                            the importance of me being there for appointments. Older people need attention,
+                                            love and care that they truly deserve.
+                                        </p>
+                                        <img
+                                            class="quotation-mark-icon"
+                                            src="assets/icons/quotation-mark-icon.svg"
+                                            alt="Quotation Mark"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="profile-img-container">
+                                        <img class="profile-img" src="assets/images/testimonials/person-1.jpg" alt="" />
+                                    </div>
+                                    <div class="content-container">
+                                        <p class="profile-name">Abbie Harvey</p>
+                                        <p class="testimonial">
+                                            I have been caring for my mom & dad off and on for about 10 years now, and I know
+                                            the importance of me being there for appointments. Older people need attention,
+                                            love and care that they truly deserve.
+                                        </p>
+                                        <img
+                                            class="quotation-mark-icon"
+                                            src="assets/icons/quotation-mark-icon.svg"
+                                            alt="Quotation Mark"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="profile-img-container">
+                                        <img class="profile-img" src="assets/images/testimonials/person-2.jpg" alt="" />
+                                    </div>
+                                    <div class="content-container">
+                                        <p class="profile-name">John Doe</p>
+                                        <p class="testimonial">
+                                            I have been caring for my mom & dad off and on for about 10 years now, and I know
+                                            the importance of me being there for appointments. Older people need attention,
+                                            love and care that they truly deserve.
+                                        </p>
+                                        <img
+                                            class="quotation-mark-icon"
+                                            src="assets/icons/quotation-mark-icon.svg"
+                                            alt="Quotation Mark"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="profile-img-container">
+                                        <img class="profile-img" src="assets/images/testimonials/person-3.jpg" alt="" />
+                                    </div>
+                                    <div class="content-container">
+                                        <p class="profile-name">Jane Joe</p>
+                                        <p class="testimonial">
+                                            I have been caring for my mom & dad off and on for about 10 years now, and I know
+                                            the importance of me being there for appointments. Older people need attention,
+                                            love and care that they truly deserve.
+                                        </p>
+                                        <img
+                                            class="quotation-mark-icon"
+                                            src="assets/icons/quotation-mark-icon.svg"
+                                            alt="Quotation Mark"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Clone of first -->
+
+                                <div class="slide">
+                                    <div class="profile-img-container">
+                                        <img class="profile-img" src="assets/images/testimonials/person-1.jpg" alt="" />
+                                    </div>
+                                    <div class="content-container">
+                                        <p class="profile-name">Abbie Harvey</p>
+                                        <p class="testimonial">
+                                            I have been caring for my mom & dad off and on for about 10 years now, and I know
+                                            the importance of me being there for appointments. Older people need attention,
+                                            love and care that they truly deserve.
+                                        </p>
+                                        <img
+                                            class="quotation-mark-icon"
+                                            src="assets/icons/quotation-mark-icon.svg"
+                                            alt="Quotation Mark"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button id="prev-btn" class="control prev">
+                            <svg width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.24 35.76L8.47999 20L24.24 4.24L20 -2.27802e-06L-7.78829e-06 20L20 40L24.24 35.76Z"
+                                    fill="#EAEAEA"
+                                />
+                            </svg>
+                        </button>
+                        <button id="next-btn" class="control next">
+                            <svg width="25" height="40" viewBox="0 0 25 40" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.76001 4.24L16.52 20L0.76001 35.76L5.00001 40L25 20L5.00001 0L0.76001 4.24Z"
+                                    fill="#EAEAEA"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services" id="services">
+                <div class="container">
+                    <div class="section-heading">
+                        <h3 class="heading-tertiary text-with-line">
+                            <span class="text-outlined dark">We</span>
+                            <span> Can Organize Everything </span>
+                        </h3>
+                    </div>
+
+                    <div class="services-info-container">
+                        <p class="services-info spotlight">
+                            <span class="highlight">Interventions</span> should focus on older adult's desire for
+                            connectedness, participation and independence.
+                        </p>
+                        <p class="services-info">
+                            Loneliness and social isolation are growing public health concerns in our aging society. Whilst
+                            these experiences occur across the life span, 50% of individuals aged over 60 are at risk of
+                            social isolation and one-third will experience some degree of loneliness later in life. It is
+                            vital to reduce loneliness and social isolation among older adults.
+                        </p>
+
+                        <p class="services-info">
+                            The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al.
+                            was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria,
+                            evaluating a range of interventions targeted at older people residing in the community or
+                            institutionalised settings.
+                        </p>
+                    </div>
+
+                    <div class="services-cards-container">
+                        <div class="service-card">
+                            <div class="service-name">
+                                Needs Assessment
+                                <img class="info-icon" src="assets/icons/info-icon.svg" alt="Info Icon" />
+                            </div>
+
+                            <span class="tooltip"
+                                >We're experienced in our individual crafts and understand how each one of our roles impacts
+                                your plan holistically.</span
+                            >
+                        </div>
+                        <div class="service-card">
+                            <div class="service-name">
+                                Treatment Planning & Placement
+                                <img class="info-icon" src="assets/icons/info-icon.svg" alt="Info Icon" />
+                            </div>
+                            <span class="tooltip"
+                                >We're experienced in our individual crafts and understand how each one of our roles impacts
+                                your plan holistically.</span
+                            >
+                        </div>
+                        <div class="service-card">
+                            <div class="service-name">
+                                Transportation & Logistics
+                                <img class="info-icon" src="assets/icons/info-icon.svg" alt="Info Icon" />
+                            </div>
+                            <span class="tooltip"
+                                >We're experienced in our individual crafts and understand how each one of our roles impacts
+                                your plan holistically.</span
+                            >
+                        </div>
+                        <div class="service-card">
+                            <div class="service-name">
+                                Insurance Advocacy
+                                <img class="info-icon" src="assets/icons/info-icon.svg" alt="Info Icon" />
+                            </div>
+                            <span class="tooltip"
+                                >We're experienced in our individual crafts and understand how each one of our roles impacts
+                                your plan holistically.</span
+                            >
+                        </div>
+                        <div class="service-card">
+                            <div class="service-name">
+                                Employment Advocacy
+                                <img class="info-icon" src="assets/icons/info-icon.svg" alt="Info Icon" />
+                            </div>
+                            <span class="tooltip"
+                                >We're experienced in our individual crafts and understand how each one of our roles impacts
+                                your plan holistically.</span
+                            >
+                        </div>
+                        <div class="service-card">
+                            <div class="service-name">
+                                Aftercare Planning
+                                <img class="info-icon" src="assets/icons/info-icon.svg" alt="Info Icon" />
+                            </div>
+                            <span class="tooltip"
+                                >We're experienced in our individual crafts and understand how each one of our roles impacts
+                                your plan holistically.</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="inner-container">
+                    <div class="left-content">
+                        <h3 class="heading-tertiary">
+                            <span class="text-outlined">Watch</span>
+                            <span>The Video</span>
+                        </h3>
+
+                        <ul class="offers-list">
+                            <li>
+                                <img class="checkmark" src="assets/icons/checkmark-icon.svg" alt="Checkmark Icon" />
+                                <div>
+                                    <p class="offer-title">Needs Assessment</p>
+                                    <p class="offer-info">
+                                        The Advocacy Evaluation Toolkit contains the instruments used to collect data for
+                                        evaluating the Consumer Voices for Coverage program.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="checkmark" src="assets/icons/checkmark-icon.svg" alt="Checkmark Icon" />
+                                <div>
+                                    <p class="offer-title">Insurance Advocacy</p>
+                                    <p class="offer-info">
+                                        We are committed to advocating for appropriate coverage and payment policies.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="checkmark" src="assets/icons/checkmark-icon.svg" alt="Checkmark Icon" />
+                                <div>
+                                    <p class="offer-title">Treatment Planning & Placement</p>
+                                    <p class="offer-info">
+                                        Patients can better understand medical procedures, discharge instructions, etc.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-content">
+                        <div class="video-container">
+                            <img class="thumbnail" src="assets/images/video/thumb.png" alt="People gathered in a park" />
+                        </div>
+
+                        <a href="/index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="Get an Intervention Logo" />
+                        </a>
+                    </div>
+
+                    <div class="sm-wavy-separator-container">
+                        <svg
+                            preserveAspectRatio="none"
+                            class="sm-wavy-separator"
+                            width="360"
+                            heigth="705"
+                            viewBox="0 0 360 705"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M360 0L360 672.055C207.778 593.182 180.278 776.131 1.1411e-06 672.055L3.05176e-05 -1.57361e-05L360 0Z"
+                                fill="#153F38"
+                                fill-opacity="1"
+                            />
+                        </svg>
+                        <svg class="sm-wavy-separator" viewBox="0 0 360 705" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M360 0L360 672.055C207.778 593.182 180.278 776.131 1.1411e-06 672.055L3.05176e-05 -1.57361e-05L360 0Z"
+                                fill="rgba(255, 255, 255, 0.2)"
+                                fill-opacity="1"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="md-wavy-separator-container">
+                        <!-- Med screen -->
+                        <svg
+                            class="md-wavy-separator"
+                            width="1024"
+                            height="648"
+                            viewBox="0 0 1024 648"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M1024 0V617.719C600 545.223 500 713.38 0 617.719L0 0H1024Z" fill="#153F38" />
+
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_1_430"
+                                    x1="397.5"
+                                    y1="8.14284"
+                                    x2="397.5"
+                                    y2="648"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#305D52" />
+                                    <stop offset="1" stop-color="#153F38" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <svg
+                            class="md-wavy-separator"
+                            width="1024"
+                            height="648"
+                            viewBox="0 0 1024 648"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1024 0V617.719C600 545.223 500 713.38 0 617.719L0 0H1024Z"
+                                fill="rgba(255, 255, 255, 0.2)"
+                                fill-opacity="1"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="lg-wavy-separator-container">
+                        <svg
+                            class="responsive-wave"
+                            viewBox="0 0 779 644"
+                            preserveAspectRatio="none"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M0 0H742.597C655.445 274 857.597 323.5 742.597 648H0V0Z"
+                                fill="white"
+                                fill-opacity="0.2"
+                            />
+                            <path
+                                d="M0 0H719.719C635.252 274 831.175 323.5 719.719 648H0V0Z"
+                                fill="url(#paint0_linear_0_1)"
+                            />
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_0_1"
+                                    x1="377.5"
+                                    y1="0"
+                                    x2="377.5"
+                                    y2="1024"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#305D52" />
+                                    <stop offset="1" stop-color="#153F38" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <button class="play-btn" id="play-btn">
+                        <img src="assets/icons/play-icon.svg" alt="Play Icon" class="play-icon" />
+                    </button>
+                </div>
+            </section>
+
+            <!-- Modal -->
+            <div id="video-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal-btn" class="close">&times;</span>
+                    <div class="video-container">
+                        <video
+                            id="video-player"
+                            controls
+                            preload="metadata"
+                            width="100%"
+                            height="auto"
+                            poster="/assets/images/video/thumb.png"
+                        >
+                            <source src="/assets/images/video/presentation.mp4" type="video/mp4" />
+                            <!-- <source src="/assets/images/video/presentation.webm" type="video/webm" /> -->
+                            <!-- <source src="/assets/images/video/presentation.ogv" type="video/ogg" /> -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="primary-footer">
+                <div class="container">
+                    <div class="content">
+                        <p class="copyright">@2025 Get an Intervention Inc. All rights reserved.</p>
+
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <a href="#" class="active-link">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Site Map</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
